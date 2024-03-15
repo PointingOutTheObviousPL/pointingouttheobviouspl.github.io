@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head> <!-- the arrow things make this. "head" is stuff not displayed on webpage -->
+    <meta charset="UTF-8" /> <!--just common lang thing-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"> <!--ask chatgpt lol, font applier-->
+    <title>Pointing out the Obvious</title>
+    <style>
+        body{font-family:'Josefin Sans', 'Gill Sans';margin:0px}
+        div{margin:30px;border-radius: 20px;}
+        p{padding:20px;color:white;}
+        h1{font-size: xx-large;padding-top:20px;text-align: center;color:white;}
+        h2{font-size: x-large;padding-bottom:20px;text-align: center;color:rgb(224, 224, 224);}
+        label{padding:20px;color:white;}
+        img{margin:20px; background-color:white;}
+        a{color:rgb(85, 168, 216);}
+        
+        .linked-images{border:10px solid rgb(15, 55, 76);border-radius:5px;display:block;margin:auto;max-width:200px;max-height:200px;padding:10px;}
+        .imgHolder{max-height:400px;width:400px;flex:1;margin:30px;text-align: center}
+        .parallax-bg
+        { 
+            background-image: url(https://jewishreview.co.il/wp-content/uploads/2019/11/why-are-we-embracing-tohu-vavohu.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            margin:0px;
+            border-radius: 0px;
+        }
+    </style> <!-- the p{...} applies to all <p>-->
+</head> <!--the "/" means it's the ending of a <> section-->
+
+<body onscroll="parallaxScroll()">
+    <script> 
+        function parallaxScroll() <!--this just makes the background cool scroll-->
+        {
+            var scrolled = window.scrollY;
+            document.querySelector('.parallax-bg').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
+        }
+    </script>
+    <div class="parallax-bg"></div>
+
+    <!--top bar-->
+    <div style="background:black;border-radius: 0px;margin:0px;padding:0px">
+        
+    </div>
+    <div style="background-color:#346475">
+         <br>
+        <div style="background-color: rgb(25, 34, 51);padding:5px">
+            <img src="https://i.ibb.co/MGybVjP/POTO-logo-color.png" alt="POTO logo" style="float: left;max-height: 150px;background-color: transparent;margin-top:0px;">
+            <h1>Pointing out the Obvious</h1>
+            <h2>Mental health accessibility for teens</h2>
+        </div>
+        <p>
+          Mental health is an obvious problem in teens, yet few of them know where to get help or just don't feel comfortable asking for help. 
+          This is why we created POTO: to make quality mental health services more accessible! 
+          We also created an app that allows teens to talk to each other about sensitive topics anonymously without feeling nervous or embarrassed, as is so common with teens seeking mental help. 
+        </p>
+    </div>
+
+    <div style="background-color: #4c773c;display:flex;flex-wrap:wrap">
+        <div class="imgHolder">
+            <a href="https://namisandiego.org/helpline/"><img class="linked-images" src="https://upload.wikimedia.org/wikipedia/commons/5/58/NAMI_logo.svg"></a>
+            <p>NAMI is designed for talking about sensitive topics with empathy, understanding and support. It is also a good referral line to connect you with more local resources.</p>
+        </div>
+        <div class="imgHolder">
+            <a href="https://mhanational.org/"><img class="linked-images" src="https://mhanational.org/themes/gavias_colin/images/mha-logo.png"></a>
+            <p>The MHA organization is a giant hub of resources for mental health, including but not limited to, their <a href="https://mhanational.org/crisisresources/">immediate response resources</a>, <a href="https://screening.mhanational.org/connect/"">connections page </a>(chat rooms, phone lines, etc.), and <a href="https://screening.mhanational.org/depression/">depression information page</a>.</p>
+        </div>
+        <div class="imgHolder">
+            <a href="https://www.samhsa.gov/"><img class="linked-images" src="https://dcp.psc.gov/OSG/physician/images/samhsa.png"></a>
+            <p>TDL SAMHSA, substance abuse and mental health servies administration, is a hotline and yeah :)</a>.</p>
+        </div>
+        <div class="imgHolder">
+            <a href="https://sites.google.com/sandi.net/sdusd-virtualcalmingroom/home"><img class="linked-images" src="https://i.ibb.co/HqfKSmB/virtual-calming-room-POTO.png"></a>
+            <p>TDL nice calming virtual room, it's a lot of calming online activities like yoga, live zoo cams, </a>.</p>
+        </div>
+        <div class="imgHolder">
+            <a href="https://www.thetrevorproject.org/resources/"><img class="linked-images" src="https://assets.glginsights.com/wp-content/uploads/2023/03/D1_TheTrevorProject_SocialImpact_Image-1.png"></a>
+            <p>TDL The Trevor project is a well known organization dedicated to helping LGBTQ+ youth. Call: 1-866-488-7386, Text: TREVOR to 1-202-304-1200
+                </p>
+        </div>
+        <div class="imgHolder">
+            <a href="https://www.childhelphotline.org/"><img class="linked-images" src="https://www.sandiegocounty.gov/content/sdc/hhsa/_jcr_content/iparside/sdcdeptlogo.img.jpg/1698361127323.jpg"></a>
+            <p>TDL child abuse. Call: (858) 560-2191, Call: (800) 344-6000</p>
+        </div>
+        <div class="imgHolder">
+            <a href="https://www.thehotline.org/"><img class="linked-images" src="https://www.thehotline.org/wp-content/themes/hotline-main/assets/images/logo-ndvh.svg"></a>
+            <p>TDL domestic violence text/call line</p>
+        </div>
+        <div class="imgHolder">
+            <a href=""><img class="linked-images" src=""></a>
+            <p>TDL</p>
+        </div>
+        
+
+       
+    </div>
+
+
+
+    <!--dont mind this!-->
+    <div style="background-color: rgb(50, 92, 106) ;">
+        <!--scripting/user input test-->
+        <p>How you feeling?</p>
+        <label for="userInput">Enter Text:</label>
+        <input type="text" id="userName" name="userName">
+        <button onclick="setUserName()"> Done &#x2713</button> <!--&#x2713 is a checkmark emoji-->
+        <script>
+            function setUserName() 
+            {
+                var userName = document.getElementById("userName").value;
+                document.getElementById("userNameDisplay").innerText = userName;
+            }
+        </script>
+        <p>You're feeling <span id="userNameDisplay"></span>. Cool. Or not. Idk this is a test lol</p>
+    </div>
+
+</body>
+</html> 
