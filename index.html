@@ -3,9 +3,10 @@
 <head> <!-- the arrow things make this. "head" is stuff not displayed on webpage -->
     <meta charset="UTF-8" /> <!--just common lang thing-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"> <!--ask chatgpt lol, font applier-->
-    <title>Pointing out the Obvious</title>
+    <title>POTO</title>
+    <link rel="icon" href="POTOIcon.png" type="image/x-icon">
     <style>
-        body{font-family:'Josefin Sans', 'Gill Sans';margin:0px}
+        body{font-family:'Josefin Sans', 'Gill Sans';margin:0px;padding-bottom:0px}
         div{margin:30px;border-radius: 20px;}
         p{padding:20px;color:white;}
         h1{font-size: xx-large;padding-top:20px;text-align: center;color:white;}
@@ -15,7 +16,7 @@
         a{color:rgb(85, 168, 216);}
         
         .linked-images{border:10px solid rgb(15, 55, 76);border-radius:5px;display:block;margin:auto;max-width:200px;max-height:200px;padding:10px;}
-        .imgHolder{max-height:400px;width:400px;flex:1;margin:30px;text-align: center}
+        .imgHolder{max-height:300px;width:400px;flex:1;margin:20px;text-align: center}
         .parallax-bg
         { 
             background-image: url(https://jewishreview.co.il/wp-content/uploads/2019/11/why-are-we-embracing-tohu-vavohu.jpg);
@@ -51,14 +52,14 @@
     <div style="background-color:#346475">
          <br>
         <div style="background-color: rgb(25, 34, 51);padding:5px">
-            <img src="https://i.ibb.co/MGybVjP/POTO-logo-color.png" alt="POTO logo" style="float: left;max-height: 150px;background-color: transparent;margin-top:0px;">
-            <h1>Pointing out the Obvious</h1>
+            <img src="POTOFinalLogo.png" alt="POTO logo" style="float: left;max-height: 150px;background-color: transparent;margin-top:0px;">
+            <h1>Pointing Out the Obvious</h1>
             <h2>Mental health accessibility for teens</h2>
         </div>
         <p>
           Mental health is an obvious problem in teens, yet few of them know where to get help or just don't feel comfortable asking for help. 
           This is why we created POTO: to make quality mental health services more accessible! 
-          We also created an app that allows teens to talk to each other about sensitive topics anonymously without feeling nervous or embarrassed, as is so common with teens seeking mental help. 
+          We also created an app with the same name that allows teens to talk to each other about sensitive topics anonymously without feeling nervous or embarrassed, as is so common with teens seeking mental help. 
         </p>
     </div>
 
@@ -73,11 +74,11 @@
         </div>
         <div class="imgHolder">
             <a href="https://www.samhsa.gov/"><img class="linked-images" src="https://dcp.psc.gov/OSG/physician/images/samhsa.png"></a>
-            <p>TDL SAMHSA, substance abuse and mental health servies administration, is a hotline and yeah :)</a>.</p>
+            <p>TDL SAMHSA, substance abuse and mental health servcies administration, is a hotline and yeah :)</a>.</p>
         </div>
         <div class="imgHolder">
             <a href="https://sites.google.com/sandi.net/sdusd-virtualcalmingroom/home"><img class="linked-images" src="https://i.ibb.co/HqfKSmB/virtual-calming-room-POTO.png"></a>
-            <p>TDL nice calming virtual room, it's a lot of calming online activities like yoga, live zoo cams, </a>.</p>
+            <p>This is just a SDUSD website featuring calming activities like yoga, live zoo cams, coloring, etc. It has lots of resources</a>.</p>
         </div>
         <div class="imgHolder">
             <a href="https://www.thetrevorproject.org/resources/"><img class="linked-images" src="https://assets.glginsights.com/wp-content/uploads/2023/03/D1_TheTrevorProject_SocialImpact_Image-1.png"></a>
@@ -96,29 +97,12 @@
             <a href=""><img class="linked-images" src=""></a>
             <p>TDL</p>
         </div>
-        
 
        
     </div>
-
-
-
-    <!--dont mind this!-->
-    <div style="background-color: rgb(50, 92, 106) ;">
-        <!--scripting/user input test-->
-        <p>How you feeling?</p>
-        <label for="userInput">Enter Text:</label>
-        <input type="text" id="userName" name="userName">
-        <button onclick="setUserName()"> Done &#x2713</button> <!--&#x2713 is a checkmark emoji-->
-        <script>
-            function setUserName() 
-            {
-                var userName = document.getElementById("userName").value;
-                document.getElementById("userNameDisplay").innerText = userName;
-            }
-        </script>
-        <p>You're feeling <span id="userNameDisplay"></span>. Cool. Or not. Idk this is a test lol</p>
+    <div style="background-color:black;min-height:15vh;margin:0px;border-radius:0px">
+        <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
+        <br>Visit our instagram @plhs_aspen_challenge</p>
     </div>
-
 </body>
-</html> 
+</html>
