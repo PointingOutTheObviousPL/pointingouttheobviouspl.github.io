@@ -4,12 +4,12 @@
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"> <!--ask chatgpt lol, font applier-->
     <title>About Us</title>
-    <link rel="icon" href="POTOIcon.png" type="image/x-icon">
+    <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
         body{font-family:'Josefin Sans', 'Gill Sans';margin:0px;padding-bottom:0px}
-        div{margin:40px;border-radius: 20px;}
-        p{padding:20px;color:white;margin:0px}
-        h1{padding:40px;font-size: xx-large;text-align: center;color:white;}
+        div{margin:10px;border-radius: 20px;}
+        p{padding:10px;color:white;margin:0px}
+        h1{padding-top:40px;font-size: xx-large;text-align: center;color:white;}
         h2{font-size: x-large;text-align: center;color:white;}
         h3,h4,h5,h6{text-align:center;color:white;margin:5px}
         label{padding:20px;color:white;}
@@ -31,6 +31,7 @@
             margin:0px;
             border-radius: 0px;
         }
+        .aboutMe{max-width:250px;max-height:250px;border:10px solid rgb(31, 71, 70);border-radius:10px;}
     </style>
 </head>
 <body onscroll="parallaxScroll()">
@@ -43,18 +44,47 @@
     </script>
     <div class="parallax-bg"></div>
     
-    <div style="background-color: rgb(35, 75, 90)">
+    <div style="background-color: rgb(35, 75, 90);text-align:center;margin:40px">
         <h1>About us</h1>
-                <div style="display:flex;flex-wrap:wrap">
-        <img src="images/Morgan_About_Me.png" style="max-height: 500px">
-        <img src="images/Audrey_About_Me.png" style="max-height: 500px">
-        <img src="images/Anna_About_Me.png" style="max-height: 500px">
-        <img src="images/Talor_About_Me.png" style="max-height: 500px">
-        <img src="images/Danya_About_Me.png" style="max-height: 500px">
-        <img src="images/Kat_About_Me.png" style="max-height: 500px">
-        <img src="images/Conners_About_Me.png" style="max-height: 500px">
-        <img src="images/Jenny_About_Me.png" style="max-height: 500px">
-        <img src="images/Sam_About_Me.png" style="max-height: 500px">
+        <h2>Meet the team who helped put everything together!</h2>
+
+        <div style="display:flex;flex-wrap:wrap;justify-content: space-evenly;"> <!--justify-content means horizontal spacing-->
+        <div>
+            <img src="images/Morgan_About_Me.png" class="aboutMe">
+            <p>Morgan: Project manager</p>
+        </div>
+        <div>
+            <img src="images/Audrey_About_Me.png" class="aboutMe">
+            <p>Audrey: Social media + designing</p>
+        </div>
+        <div>
+            <img src="images/Anna_About_Me.png" class="aboutMe">
+            <p>Anna: Illustrater + documentarian</p>
+        </div>
+        <div>
+            <img src="images/Talor_About_Me.png" class="aboutMe">
+            <p>Talor: App developer and manager</p>
+        </div>
+        <div>
+            <img src="images/Danya_About_Me.png" class="aboutMe">
+            <p>Danya: Presentation and website designing</p>
+        </div>
+        <div>
+            <img src="images/Kat_About_Me.png" class="aboutMe">
+            <p>Kat: Website developer and manager</p>
+        </div>
+        <div>
+            <img src="images/Conner_About_Me.png" class="aboutMe">
+            <p>Conner: Outreach coordinator</p>
+        </div>
+        <div>
+            <img src="images/Jenny_About_Me.png" class="aboutMe">
+            <p>Jenny: Supplies coordinator</p>
+        </div>
+        <div>
+            <img src="images/Sam_About_Me.png" class="aboutMe">
+            <p>Sam: Researcher</p>
+        </div>
         </div>
     </div>
 </body>
