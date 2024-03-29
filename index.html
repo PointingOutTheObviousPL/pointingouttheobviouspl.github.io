@@ -4,7 +4,7 @@
     <meta charset="UTF-8" /> <!--just common lang thing-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"> <!--ask chatgpt lol, font applier-->
     <title>POTO</title>
-    <link rel="icon" href="/images/POTOIcon.png" type="image/png">
+    <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
         body{font-family:'Josefin Sans', 'Gill Sans';margin:0px;padding-bottom:0px}
         div{margin:30px;border-radius: 20px;}
@@ -12,9 +12,8 @@
         h1{font-size: xx-large;text-align: center;color:white;}
         h2{font-size: x-large;text-align: center;color:white;}
         h3,h4,h5,h6{text-align:center;color:white;margin:5px}
-        label{padding:20px;color:white;}
         img{margin:20px; background-color:white;}
-        a{color:rgb(85, 168, 216);}
+        a{color:rgb(169, 234, 255);}
         
         .linked-images{border:10px solid rgb(15, 55, 76);border-radius:5px;display:block;margin:auto;max-width:200px;max-height:200px;padding:10px;}
         .imgHolder{max-height:400px;width:400px;flex:1;margin:20px;text-align: center}
@@ -36,6 +35,8 @@
             margin:0px;
             border-radius: 0px;
         }
+
+        
     </style> <!-- the p{...} applies to all <p>-->
 </head> <!--the "/" means it's the ending of a <> section-->
 
@@ -50,29 +51,33 @@
     <div class="parallax-bg"></div>
 
     <!--top bar-->
-    <div style="background:black;border-radius: 0px;margin:0px;padding:0px">
-        
+    <div style="background-color:black;min-height:5vh;margin:0px;border-radius:0px;display:flex;flex-wrap:wrap;align-items:center;">
+        <a href="potopl.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:50px;display:block;"></img></a>
+        <a href="resources1.html"><p style="padding:10px">Resources</p></a>
+        <a href="AboutUs.html"><p style="padding:10px">About Us</p></a>
     </div>
+
     <div style="background-color:#346475">
          <br>
-        <div style="background-color: rgb(25, 34, 51);padding:5px;display:flex;align-items: center;justify-content:center;">
+        <div style="background-color: rgb(25, 34, 51);padding:5px;display:flex;align-items:center;justify-content:center;">
             <img src="images/POTOFinalLogo.png" alt="POTO logo" style="max-height: 150px;background-color:transparent;">
             <div>
                 <h1>Pointing Out the Obvious</h1>
                 <h2>Mental health accessibility for teens</h2>
             </div>
         </div>
-        
         <h3>What is POTO?</h3>
-        <p>We are a group of high schoolers trying to make mental health accessible to all students. What's so odvious, you may ask? Two things: mental health in teenagers is a huge problem. Yet there are many resources to help that they're not using for a variety of reasons. 
+        <p>
+            We are a group of high schoolers trying to make mental health accessible to all students. What's so obvious, you may ask? Two things: mental health in teenagers is a huge problem. Yet there are many resources to help that they're not using for a variety of reasons. 
             Making a simple Google search for mental health resources brings up a bunch of stuff, but which ones actually work? 
-            We made a complied list of organizations with brief descriptions so you can easily find help best suited for you. 
-            Made by teens, for teens.</p>
-        <h3><a href="AboutUs.html">About us</a></h3>
+            We made a compiled list of organizations with brief descriptions so you can easily find help best suited for you. 
+            Made by teens, for teens.
+        </p>
+        <h3>About us</h3>
         <p>
             Mental health is an obvious problem in teens, yet few of them know where to get help or just don't feel comfortable asking for help. 
             This is why we created POTO: to make quality mental health services more accessible! 
-            We also created an app that allows teens to talk to each other about sensitive topics anonymously without feeling nervous or embarrassed, as is so common with teens seeking mental help. 
+            We also created an app called SoulSync that allows teens to talk to each other about sensitive topics anonymously without feeling nervous or embarrassed, as is so common with teens seeking mental help. 
             Our team came about from the Aspen Challenge program, which challenges high school students to create and implement a solution to one of 5 topics. 
             This year, 2024, PLHS chose to try and make mental health resources widely accessible to all students at no cost. 
             Our hope is that POTO and SoulSync become reliable mental health hubs for teens to connect.
@@ -89,26 +94,18 @@
 
     <div style="background-color: #4c773c;display:flex;flex-wrap:wrap">
         <h2 style="width:100%">Resources</h2>
-        <p>Tip: colored borders mean different things. Orange indicates that this resource has a hotline directly available.</p>
+        <h3 style="width:100%">Click <a href="resources1.html">here</a> for a more detailed list with direct filters to better fit your needs</h3>
         <div class="imgHolder">
             <a href="https://namisandiego.org/helpline/"><img class="linked-images hotline" src="https://upload.wikimedia.org/wikipedia/commons/5/58/NAMI_logo.svg"></a>
             <p>NAMI is designed for talking about sensitive topics with empathy, understanding and support. It is also a good referral line to connect you with more local resources.</p>
-        </div>
-        <div class="imgHolder">
-            <a href="https://mhanational.org/"><img class="linked-images" src="https://mhanational.org/themes/gavias_colin/images/mha-logo.png"></a>
-            <p>The MHA organization is a giant hub of resources for mental health, including but not limited to, their <a href="https://mhanational.org/crisisresources/">immediate response resources</a>, <a href="https://screening.mhanational.org/connect/"">connections page </a>(chat rooms, phone lines, etc.), and <a href="https://screening.mhanational.org/depression/">depression information page</a>.</p>
         </div>
         <div class="imgHolder">
             <a href="https://www.samhsa.gov/"><img class="linked-images hotline" src="https://dcp.psc.gov/OSG/physician/images/samhsa.png"></a>
             <p>SAMHSA, Substance Abuse and Mental Health Services Administration, is an official US organization with lots of resources for all sorts of scenarios.</p>
         </div>
         <div class="imgHolder">
-            <a href="https://sites.google.com/sandi.net/sdusd-virtualcalmingroom/home"><img class="linked-images" src="https://i.ibb.co/HqfKSmB/virtual-calming-room-POTO.png"></a>
-            <p>This is just a SDUSD website featuring calming activities like yoga, live zoo cams, coloring, etc. It has lots of online and IRL things to try out that can help relieve stress and maybe even lead to a new hobby.</p>
-        </div>
-        <div class="imgHolder">
-            <a href="https://www.thetrevorproject.org/resources/"><img class="linked-images hotline" src="https://assets.glginsights.com/wp-content/uploads/2023/03/D1_TheTrevorProject_SocialImpact_Image-1.png"></a>
-            <p>The Trevor project is a well known organization dedicated to helping LGBTQ+ youth. Call: 1-866-488-7386, Text: TREVOR to 1-202-304-1200</p>
+            <a href="https://mhanational.org/"><img class="linked-images" src="https://mhanational.org/themes/gavias_colin/images/mha-logo.png"></a>
+            <p>The MHA organization is a giant hub of resources for mental health, including but not limited to, their <a href="https://mhanational.org/crisisresources/">immediate response resources</a>, <a href="https://screening.mhanational.org/connect/"">connections page </a>(chat rooms, phone lines, etc.), and <a href="https://screening.mhanational.org/depression/">depression information page</a>.</p>
         </div>
         <div class="imgHolder">
             <a href="https://www.childhelphotline.org/"><img class="linked-images hotline" src="https://www.sandiegocounty.gov/content/sdc/hhsa/_jcr_content/iparside/sdcdeptlogo.img.jpg/1698361127323.jpg"></a>
@@ -120,13 +117,14 @@
         </div>
         <div class="imgHolder">
             <a href="https://www.psychologytoday.com/us/therapists"><img class="linked-images" src="https://turnaroundusa.org/wp-content/uploads/2020/06/psychology-today-vector-logo.png"></a>
-            <p>This is an easy way to find therapists close to you.</p>
+            <p>This is an extremely easy way to find therapists close to you all across the USA. It lists TONS of therapists with detailed accounts of all of them including specialties, location, reviews, and prices.</p>
         </div>
         <div class="imgHolder">
-            <a href=""><img class="linked-images" src="/images/POTOIcon.png"></a>
+            <a href=""><img class="linked-images" src="images/POTOIcon.png"></a>
             <p>This website is still under development, so new resources may be added periodically.</p>
         </div>
 
+       
     </div>
     <div style="background-color:black;min-height:15vh;margin:0px;border-radius:0px">
         <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
