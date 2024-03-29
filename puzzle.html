@@ -1,0 +1,40 @@
+<script src="https://flbulgarelli.github.io/headbreaker/js/headbreaker.js"></script>
+<div style="width:99%; height: 100%; margin: 0; overflow: hidden">
+    <p style="z-index: 1;">Hold shift to move multiple connnected pieces, hold ctrl to move a single piece part of multiple connnected pieces</p>
+    <div id="background-canvas" style="width:99%; height: 99%; z-index: 0;"></div>
+</div>
+
+<script>
+  let poto = new Image();
+poto.src = '/images/POTOFinalLogo.png';
+poto.onload = () => {
+  const background = new headbreaker.Canvas('background-canvas', {
+    width: document.getElementById("background-canvas").clientWidth, height: document.getElementById("background-canvas").clientHeight,
+    pieceSize: 100, proximity: 20,
+    borderFill: 10, strokeWidth: 2,
+    lineSoftness: 0.12, image: poto,
+    // optional, but it must be set in order to activate image scaling
+    maxPiecesCount: {x: 5, y: 5},
+    preventOffstageDrag: true,
+    fixed: true
+  });
+
+  background.adjustImagesToPuzzleHeight();
+  background.autogenerate({
+    insertsGenerator: headbreaker.generators.flipflop,
+    horizontalPiecesCount: 5,
+    verticalPiecesCount: 5,
+    fixed: true
+  });
+  background.shuffle(0.7);
+  background.registerKeyboardGestures();
+  background.draw();
+  //registerButtons('background', background);
+  background.attachSolvedValidator();
+  background.onValid(() => {
+    setTimeout(() => {
+        console.log("solved")
+    }, 10);
+  })
+}
+</script>
