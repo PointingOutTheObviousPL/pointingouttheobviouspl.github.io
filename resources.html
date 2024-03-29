@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head> <!-- the arrow things make this. "head" is stuff not displayed on webpage -->
-    <meta charset="UTF-8" /> <!--just common lang thing-->
+<head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"> <!--ask chatgpt lol, font applier-->
+    <title>Resources</title>
+    <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
         body{font-family:'Josefin Sans', 'Gill Sans';margin:0px;padding-bottom:0px}
-        div{margin:30px;border-radius: 20px;}
-        p{padding:20px;color:white;margin:0px}
+        div{margin:30px;border-radius: 20px;padding:10px}
+        p{padding:30px;color:white;margin:0px}
         h1{font-size: xx-large;text-align: center;color:white;}
         h2{font-size: x-large;text-align: center;color:white;}
         h3,h4,h5,h6{text-align:center;color:white;margin:5px}
@@ -14,56 +16,124 @@
         img{margin:20px; background-color:white;}
         a{color:rgb(85, 168, 216);}
         
+        button
+        {
+            font-family:'Josefin Sans';padding:5px;background-color:#d1fbff;
+            width:80px; height:40px
+        }
+        
         .linked-images{border:10px solid rgb(15, 55, 76);border-radius:5px;display:block;margin:auto;max-width:200px;max-height:200px;padding:10px;}
         .imgHolder{max-height:400px;width:400px;flex:1;margin:20px;text-align: center}
         .linked-images:hover{transform:scale(1.05);transition:transform 0.1s ease}
-    </style> <!-- the p{...} applies to all <p>-->
-</head> <!--the "/" means it's the ending of a <> section-->
+        
+        .parallax-bg
+        { 
+            background-image: url(images/HomeBackground.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            margin:0px;
+            border-radius: 0px;
+        }
+        
+        .hide{display:none}
+        .show{display:block}
+    </style>
+</head>
 
+<body onscroll="parallaxScroll()">
+    <script> 
+        function parallaxScroll() <!--this just makes the background cool scroll-->
+        {
+            var scrolled = window.scrollY;
+            document.querySelector('.parallax-bg').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
+        }
+    </script>
+    <div class="parallax-bg"></div>
+    
+    <!--top bar-->
+    <div style="background-color:black;min-height:5vh;margin:0px;border-radius:0px;display:flex;flex-wrap:wrap;align-items:center;">
+        <a href="potopl.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:50px;display:block;"></img></a>
+        <a href="resources1.html"><p style="padding:10px">Resources</p></a>
+        <a href="AboutUs.html"><p style="padding:10px">About Us</p></a>
+    </div>
 
+    <script>
+        function filterSelection(category) 
+        {
+         var elements = document.getElementsByClassName("filterDiv");
 
+            for (var i = 0; i < elements.length; i++) 
+            {
+                var element = elements[i];
 
+                if (category === "all" || element.classList.contains(category)) 
+                {element.style.display = "block";}
+                else 
+                {element.style.display = "none";}
+            }
+        }
+    </script>
 
-    <div style="background-color: #4c773c;display:flex;flex-wrap:wrap">
-        <h2 style="width:100%">Resources</h2>
-        <div class="imgHolder">
-            <a href="https://namisandiego.org/helpline/"><img class="linked-images" src="https://upload.wikimedia.org/wikipedia/commons/5/58/NAMI_logo.svg"></a>
-            <p>NAMI is designed for talking about sensitive topics with empathy, understanding and support. It is also a good referral line to connect you with more local resources.</p>
-        </div>
-        <div class="imgHolder">
-            <a href="https://mhanational.org/"><img class="linked-images" src="https://mhanational.org/themes/gavias_colin/images/mha-logo.png"></a>
-            <p>The MHA organization is a giant hub of resources for mental health, including but not limited to, their <a href="https://mhanational.org/crisisresources/">immediate response resources</a>, <a href="https://screening.mhanational.org/connect/"">connections page </a>(chat rooms, phone lines, etc.), and <a href="https://screening.mhanational.org/depression/">depression information page</a>.</p>
-        </div>
-        <div class="imgHolder">
-            <a href="https://www.samhsa.gov/"><img class="linked-images" src="https://dcp.psc.gov/OSG/physician/images/samhsa.png"></a>
-            <p>SAMHSA, Substance Abuse and Mental Health Services Administration, is an official US organization with lots of resources for all sorts of scenarios.</p>
-        </div>
-        <div class="imgHolder">
-            <a href="https://sites.google.com/sandi.net/sdusd-virtualcalmingroom/home"><img class="linked-images" src="https://i.ibb.co/HqfKSmB/virtual-calming-room-POTO.png"></a>
-            <p>This is just a SDUSD website featuring calming activities like yoga, live zoo cams, coloring, etc. It has lots of online and IRL things to try out that can help relieve stress and maybe even lead to a new hobby.</p>
-        </div>
-        <div class="imgHolder">
-            <a href="https://www.thetrevorproject.org/resources/"><img class="linked-images" src="https://assets.glginsights.com/wp-content/uploads/2023/03/D1_TheTrevorProject_SocialImpact_Image-1.png"></a>
-            <p>The Trevor project is a well known organization dedicated to helping LGBTQ+ youth. Call: 1-866-488-7386, Text: TREVOR to 1-202-304-1200</p>
-        </div>
-        <div class="imgHolder">
-            <a href="https://www.childhelphotline.org/"><img class="linked-images" src="https://www.sandiegocounty.gov/content/sdc/hhsa/_jcr_content/iparside/sdcdeptlogo.img.jpg/1698361127323.jpg"></a>
-            <p>The Childhelp National Child Abuse Hotline has counselors who provide support, coping resources, and crisis counseling to abused children and anyone wanting more knowledge on what to do. Call/text: 800-422-4453</p>
-        </div>
-        <div class="imgHolder">
-            <a href="https://www.thehotline.org/"><img class="linked-images" src="https://www.thehotline.org/wp-content/themes/hotline-main/assets/images/logo-ndvh.svg"></a>
-            <p>The NDVH is a hotline which helps people in abusive relationships, families, etc. There is a live chat directly on their website as well as phone numbers and resources.</p>
-        </div>
-        <div class="imgHolder">
-            <a href="https://www.psychologytoday.com/us/therapists"><img class="linked-images" src="https://turnaroundusa.org/wp-content/uploads/2020/06/psychology-today-vector-logo.png"></a>
-            <p>This is an easy way to find therapists close to you.</p>
-        </div>
-        <div class="imgHolder">
-            <a href=""><img class="linked-images" src="POTOIcon.png"></a>
-            <p>This website is still under development, so new resources may be added periodically.</p>
-        </div>
+    <div style="background-color: rgb(49, 45, 111);">
+        <h1>Resources</h1>
+        <h2>Select a catagory to find the perfect mental health resources for you!</h2>
+        <p>This list is far from finished, but feel free to browse around :)</p>
+        
+        <button onclick="filterSelection('all')">Show All</button>
+        <button onclick="filterSelection('hotline')">Hotlines</button>
+        <button onclick="filterSelection('lgbtq')">LGBTQ+</button>
+        <button onclick="filterSelection('calming')">Calming</button>
+        <button onclick="filterSelection('therapy')">Therapists</button>
 
-       
+        <div style="display:flex;flex-wrap:wrap">
+            <div class="filterDiv imgHolder hotline">
+                <a href="https://namisandiego.org/helpline/"><img class="linked-images" src="https://upload.wikimedia.org/wikipedia/commons/5/58/NAMI_logo.svg"></a>
+                <p>NAMI is designed for talking about sensitive topics with empathy, understanding and support. It is also a good referral line to connect you with more local resources.
+                </p>
+            </div>
+            <div class="filterDiv imgHolder">
+                <a href="https://mhanational.org/"><img class="linked-images" src="https://mhanational.org/themes/gavias_colin/images/mha-logo.png"></a>
+                <p>The MHA organization is a giant hub of resources for mental health, including but not limited to, their immediate response resources, connections page (chat rooms, phone lines, etc.), and depression information page.</p>
+            </div>
+            <div class="filterDiv imgHolder hotline">
+                <a href="https://www.samhsa.gov/"><img class="linked-images" src="https://dcp.psc.gov/OSG/physician/images/samhsa.png"></a>
+                <p>SAMHSA, Substance Abuse and Mental Health Services Administration, is an official US organization with lots of resources for all sorts of scenarios.</p>
+            </div>
+            <div class="filterDiv imgHolder calming">
+                <a href="https://sites.google.com/sandi.net/sdusd-virtualcalmingroom/home"><img class="linked-images" src="https://i.ibb.co/HqfKSmB/virtual-calming-room-POTO.png"></a>
+                <p>This is just a SDUSD website featuring calming activities like yoga, live zoo cams, coloring, etc. It has lots of online and IRL things to try out that can help relieve stress and maybe even lead to a new hobby.</p>
+            </div>
+            <div class="filterDiv imgHolder lgbtq hotline">
+                <a href="https://www.thetrevorproject.org/resources/"><img class="linked-images" src="https://assets.glginsights.com/wp-content/uploads/2023/03/D1_TheTrevorProject_SocialImpact_Image-1.png"></a>
+                <p>The Trevor project is a well known organization dedicated to helping LGBTQ+ youth. Call: 1-866-488-7386, Text: TREVOR to 1-202-304-1200</p>
+            </div>
+            <div class="filterDiv imgHolder hotline">
+                <a href="https://www.childhelphotline.org/"><img class="linked-images" src="https://www.sandiegocounty.gov/content/sdc/hhsa/_jcr_content/iparside/sdcdeptlogo.img.jpg/1698361127323.jpg"></a>
+                <p>The Childhelp National Child Abuse Hotline has counselors who provide support, coping resources, and crisis counseling to abused children and anyone wanting more knowledge on what to do. Call/text: 800-422-4453</p>
+            </div>
+            <div class="filterDiv imgHolder hotline">
+                <a href="https://www.thehotline.org/"><img class="linked-images" src="https://www.thehotline.org/wp-content/themes/hotline-main/assets/images/logo-ndvh.svg"></a>
+                <p>The NDVH is a hotline which helps people in abusive relationships, families, etc. There is a live chat directly on their website as well as phone numbers and resources.</p>
+            </div>
+            <div class="filterDiv imgHolder therapy">
+                <a href="https://www.psychologytoday.com/us/therapists"><img class="linked-images" src="https://turnaroundusa.org/wp-content/uploads/2020/06/psychology-today-vector-logo.png"></a>
+                <p>This is an extremely easy way to find therapists close to you all across the USA. It lists TONS of therapists with detailed accounts of all of them including specialties, location, reviews, and prices.</p>
+            </div>
+            
+
+            <!--
+            <div class="filterDiv imgHolder tags">
+                <a href="link"><img class="linked-images" src="icon"></a>
+                <p>descriptions</p>
+            </div>
+            -->
+        </div>
     </div>
 </body>
-</html>
