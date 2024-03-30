@@ -19,10 +19,10 @@
         button
         {
             font-family:'Josefin Sans';padding:5px;background-color:#d1fbff;
-            width:80px; height:40px
+            max-width:100px;min-width:80px;height:50px
         }
         
-        .linked-images{border:10px solid rgb(15, 55, 76);border-radius:5px;display:block;margin:auto;max-width:200px;max-height:200px;padding:10px;}
+        .linked-images{border:10px solid rgb(45, 6, 76);border-radius:5px;display:block;margin:auto;max-width:200px;max-height:200px;padding:10px;}
         .imgHolder{max-height:400px;width:400px;flex:1;margin:20px;text-align: center}
         .linked-images:hover{transform:scale(1.05);transition:transform 0.1s ease}
         
@@ -81,16 +81,18 @@
         }
     </script>
 
-    <div style="background-color: rgb(49, 45, 111);">
+    <div style="background-color: rgb(51, 47, 106);">
         <h1>Resources</h1>
         <h2>Select a catagory to find the perfect mental health resources for you!</h2>
         <p>This list is far from finished, but feel free to browse around :)</p>
         
         <button onclick="filterSelection('all')">Show All</button>
-        <button onclick="filterSelection('hotline')">Hotlines</button>
+        <button onclick="filterSelection('hotline')">Helplines</button>
         <button onclick="filterSelection('lgbtq')">LGBTQ+</button>
         <button onclick="filterSelection('calming')">Calming</button>
         <button onclick="filterSelection('therapy')">Therapists</button>
+        <button onclick="filterSelection('alcohol')">Alcohol</button>
+        <button onclick="filterSelection('drugs')">Drug Abuse</button>
 
         <div style="display:flex;flex-wrap:wrap">
             <div class="filterDiv imgHolder hotline">
@@ -125,6 +127,30 @@
             <div class="filterDiv imgHolder therapy">
                 <a href="https://www.psychologytoday.com/us/therapists"><img class="linked-images" src="https://turnaroundusa.org/wp-content/uploads/2020/06/psychology-today-vector-logo.png"></a>
                 <p>This is an extremely easy way to find therapists close to you all across the USA. It lists TONS of therapists with detailed accounts of all of them including specialties, location, reviews, and prices.</p>
+            </div>
+            <div class="filterDiv imgHolder alcohol">
+                <a href="https://al-anon.org/"><img class="linked-images" src="https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/6uigqinhlp68hvthhs0e472kah.jpg"></a>
+                <p>This international aid group supports individuals affected by a loved one's alcoholism.</p>
+            </div>
+            <div class="filterDiv imgHolder alcohol hotline">
+                <a href="https://aasandiego.org/"><img class="linked-images" src="https://www.experiencerecovery.com/wp-content/uploads/2020/03/what-is-alcoholics-anonymous.jpg"></a>
+                <p>Alcoholics Anonymous is a fellowship helping members stay sober throughout San Diego through a 12-step program.</p>
+            </div>
+            <div class="filterDiv imgHolder smoking">
+                <a href="https://www.cancer.org/cancer/risk-prevention/tobacco.html"><img class="linked-images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/American_Lung_Association_logo_2020.svg/800px-American_Lung_Association_logo_2020.svg.png"></a>
+                <p>American Lung Association provides resources and coaching for those with lung cancer and those overcoming tobacco addiction.</p>
+            </div>
+            <div class="filterDiv imgHolder smoking">
+                <a href="https://kickitca.org/"><img class="linked-images" src="https://www.kickitca-wp.ucsd.edu/wp-content/uploads/2021/06/Primary.png"></a>
+                <p>This free program helps Californians quit smoking, vaping, and tobacco usage. Easily call or message a coach to get started.</p>
+            </div>
+            <div class="filterDiv imgHolder drugs">
+                <a href="https://cadfy.org/"><img class="linked-images" src="https://static.wixstatic.com/media/aa9d62_0abfa19936ff486cb555b9485747996a~mv2_d_1887_1542_s_2.png/v1/fill/w_334,h_274,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/aa9d62_0abfa19936ff486cb555b9485747996a~mv2_d_1887_1542_s_2.png"></a>
+                <p>CADFY is a non-profit that collaborates with schools, organizations, and parents to prevent substance abuse in youth.</p>
+            </div>
+            <div class="filterDiv imgHolder drugs alcohol">
+                <a href="https://mcalisterinc.org/"><img class="linked-images" src="https://mcalisterinc.org/wp-content/uploads/2016/11/McAlister_Logo_red.png"></a>
+                <p>Provides substance abuse treatment and recovery programs for a low price for youth and adults throughout San Diego County. Services include: telehealth, education, intervention and outreach, outpatient treatment, residential care (short and long term), and aftercare.</p>
             </div>
             
 
