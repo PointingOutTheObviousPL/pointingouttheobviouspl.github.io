@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head> <!-- the arrow things make this. "head" is stuff not displayed on webpage -->
-    <meta charset="UTF-8" /> <!--just common lang thing-->
+<html><head> <!-- the arrow things make this. "head" is stuff not displayed on webpage -->
+    <meta charset="UTF-8"> <!--just common lang thing-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"> <!--ask chatgpt lol, font applier-->
     <title>POTO</title>
     <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
         body{font-family:'Josefin Sans', 'Gill Sans';margin:0px;padding-bottom:0px}
         div{margin:30px;border-radius: 20px;padding:10px}
-        p{padding:30px;color:white;margin:0px}
-        h1{font-size: xx-large;text-align: center;color:white;}
-        h2{font-size: x-large;text-align: center;color:white;}
-        h3,h4,h5,h6{text-align:center;color:white;margin:5px}
+        p{padding:30px;color:white;margin:0px;font-size:20px}
+        h1{font-size:40px}
+        h2{font-size:30px}
+        h3{font-size:25px}
+        h1,h2,h3,h4,h5,h6{text-align:center;color:white;margin:5px}
         img{margin:20px; background-color:white;}
         a{color:rgb(169, 234, 255);}
         
         .linked-images{border:10px solid rgb(15, 55, 76);border-radius:5px;display:block;margin:auto;max-width:200px;max-height:200px;padding:10px;}
-        .imgHolder{max-height:400px;width:400px;flex:1;margin:20px;text-align: center}
+        .imgHolder{max-height:400px;width:400px;flex:1;margin:0px;text-align: center}
         .linked-images:hover{transform:scale(1.05);transition:transform 0.1s ease}
         
         .topbar{font-size:20px;padding:10px}
@@ -48,11 +47,11 @@
             document.querySelector('.parallax-bg').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
         }
     </script>
-    <div class="parallax-bg"></div>
+    <div class="parallax-bg" style="background-position-y: -286px;"></div>
 
     <!--top bar-->
     <div style="background-color:black;min-height:5vh;margin:0px;border-radius:0px;display:flex;flex-wrap:wrap;align-items:center;">
-        <a href="index.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:50px;display:block;"></img></a>
+        <a href="index.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:50px;display:block;"></a>
         <a href="resources1.html"><p class="topbar">Resources</p></a>
         <a href="hotlines.html"><p class="topbar">Hotlines</p></a>
         <a href="AboutUs.html"><p class="topbar">About Us</p></a>
@@ -90,12 +89,12 @@
             Our app solves all of these issues because it's super easy to access, it's free, and by participating you are actively training student therapists so they can later work professionally. 
             We are hoping for this app to become accessible on school computers in SDUSD, but for now we are beta-testing on IOS and Android.
         </p>
-        <h3 style="color:rgb(207, 91, 91)">Please note that this project is a work in progress :)</h3><br><br>
+        <p style="text-align:center;color:rgb(207, 91, 91)">Please note that this project is a work in progress :)</p><br><br>
     </div>
 
-    <div style="background-color: #4c773c;display:flex;flex-wrap:wrap">
-        <h2 style="width:100%">Resources</h2>
-        <h3 style="width:100%">Click <a href="resources1.html">here</a> for a much longer list with direct filters to better fit your needs, or call 911 for immediate help</h3>
+    <div style="background-color: #4c773c;display:flex;flex-wrap:wrap;padding-top:10px;padding-bottom:10px;">
+        <h1 style="width:100%">Resources</h1>
+        <h2 style="width:100%">Click <a href="resources1.html">here</a> for a much longer list with direct filters to better fit your needs, or call 911 for immediate help</h2>
 
         <div class="imgHolder">
             <a href="https://namisandiego.org/helpline/"><img class="linked-images" src="https://upload.wikimedia.org/wikipedia/commons/5/58/NAMI_logo.svg"></a>
@@ -107,7 +106,7 @@
         </div>
         <div class="imgHolder">
             <a href="https://mhanational.org/"><img class="linked-images" src="https://mhanational.org/themes/gavias_colin/images/mha-logo.png"></a>
-            <p>The MHA organization is a giant hub of resources for mental health, including but not limited to, their <a href="https://mhanational.org/crisisresources/">immediate response resources</a>, <a href="https://screening.mhanational.org/connect/"">connections page </a>(chat rooms, phone lines, etc.), and <a href="https://screening.mhanational.org/depression/">depression information page</a>.</p>
+            <p>The MHA organization is a giant hub of resources for mental health, including but not limited to, their <a href="https://mhanational.org/crisisresources/">immediate response resources</a>, <a href="https://screening.mhanational.org/connect/" "="">connections page </a>(chat rooms, phone lines, etc.), and <a href="https://screening.mhanational.org/depression/">depression information page</a>.</p>
         </div>
         <div class="imgHolder">
             <a href="https://www.childhelphotline.org/"><img class="linked-images" src="https://www.sandiegocounty.gov/content/sdc/hhsa/_jcr_content/iparside/sdcdeptlogo.img.jpg/1698361127323.jpg"></a>
@@ -127,5 +126,6 @@
         <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
         <br>Visit our instagram @plhs_aspen_challenge</p>
     </div>
-</body>
-</html>
+
+
+</body></html>
