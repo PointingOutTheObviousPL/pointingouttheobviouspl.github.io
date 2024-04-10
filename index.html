@@ -4,18 +4,18 @@
     <title>POTO</title>
     <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
-        body{font-family:'Josefin Sans', 'Gill Sans';margin:0px;padding-bottom:0px}
-        div{margin:30px;border-radius: 20px;padding:10px}
-        p{padding:30px;color:white;margin:0px;font-size:20px}
-        h1{font-size:40px}
-        h2{font-size:30px}
-        h3{font-size:25px}
-        h1,h2,h3,h4,h5,h6{text-align:center;color:white;margin:5px}
-        img{margin:20px; background-color:white;}
-        a{color:rgb(169, 234, 255);}
+        body{font-family:'Josefin Sans','Gill Sans';margin:0px;padding-bottom:0px}
+        div{margin:30px;border-radius:20px;padding:10px}
+        p{padding:30px;padding-top:5px;color:white;margin:0px;font-size:20px}
+        h1{font-size:40px;padding-top:20px}
+        h2{font-size:30px;padding-bottom:20px}
+        h3{font-size:25px;font-weight:normal}
+        h1,h2,h3,h4,h5,h6{text-align:center;color:white;margin:0px;}
+        img{margin:5px; background-color:white;}
+        a{color:rgb(169,234,255);}
         
-        .linked-images{border:10px solid rgb(15, 55, 76);border-radius:5px;display:block;margin:auto;max-width:200px;max-height:200px;padding:10px;}
-        .imgHolder{max-height:400px;width:400px;flex:1;margin:0px;text-align: center}
+        .linked-images{border:10px solid rgb(15, 55, 76);border-radius:5px;display:block;margin:auto;max-width:250px;max-height:200px;padding:10px;margin-bottom:10px}
+        .imgHolder{max-height:400px;width:400px;flex:1;margin:0px;text-align:center;padding:5px}
         .linked-images:hover{transform:scale(1.05);transition:transform 0.1s ease}
         
         .topbar{font-size:20px;padding:10px}
@@ -36,8 +36,8 @@
         }
 
         
-    </style> <!-- the p{...} applies to all <p>-->
-</head> <!--the "/" means it's the ending of a <> section-->
+    </style>
+</head>
 
 <body onscroll="parallaxScroll()">
     <script> 
@@ -51,26 +51,32 @@
 
     <!--top bar-->
     <div style="background-color:black;min-height:5vh;margin:0px;border-radius:0px;display:flex;flex-wrap:wrap;align-items:center;">
-        <a href="index.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:50px;display:block;"></a>
+        <a href="index.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:70px;padding-right:10px"></a>
         <a href="resources1.html"><p class="topbar">Resources</p></a>
         <a href="hotlines.html"><p class="topbar">Hotlines</p></a>
         <a href="AboutUs.html"><p class="topbar">About Us</p></a>
     </div>
 
     <div style="background-color:#346475">
-         <br>
-        <div style="background-color: rgb(25, 34, 51);padding:5px;display:flex;align-items:center;justify-content:center;">
+        <div style="background-color: rgb(25, 34, 51);padding:5px;">
+         <div style="display:flex;align-items:center;justify-content:center;margin:0px">
             <img src="images/POTOFinalLogo.png" alt="POTO logo" style="max-height: 150px;background-color:transparent;">
             <div>
                 <h1>Pointing Out the Obvious</h1>
                 <h2>Mental health accessibility for teens</h2>
             </div>
+         </div>
+            <h3 style="padding-left:100px;padding-right:100px;padding-bottom:40px">
+                POTO is dedicated to expanding mental health awareness and accessibility for teens. 
+                Explore our <a href="resources1.html">library of resources</a> or connect with similar youth in our anonymous, peer-support app, SoulSync.
+            </h3>
         </div>
+        
         <h3>What is POTO?</h3>
         <p>
             We are a group of high schoolers trying to make mental health accessible to all students. What's so obvious, you may ask? Two things: mental health in teenagers is a huge problem. Yet there are many resources to help that they're not using for a variety of reasons. 
             Making a simple Google search for mental health resources brings up a bunch of stuff, but which ones actually work? 
-            We made a <a href="resources1.html">compiled list of organizations</a> with brief descriptions so you can easily find help best suited for you. 
+            We made a compiled list of organizations with brief descriptions so you can easily find help best suited for you. 
             Made by teens, for teens.
         </p>
         <h3>About us</h3>
@@ -89,12 +95,12 @@
             Our app solves all of these issues because it's super easy to access, it's free, and by participating you are actively training student therapists so they can later work professionally. 
             We are hoping for this app to become accessible on school computers in SDUSD, but for now we are beta-testing on IOS and Android.
         </p>
-        <p style="text-align:center;color:rgb(207, 91, 91)">Please note that this project is a work in progress :)</p><br><br>
+        <p style="text-align:center;color:rgb(207, 91, 91)">Please note that this project is a work in progress :)</p>
     </div>
 
-    <div style="background-color: #4c773c;display:flex;flex-wrap:wrap;padding-top:10px;padding-bottom:10px;">
+    <div style="background-color: #4c773c;display:flex;flex-wrap:wrap;">
         <h1 style="width:100%">Resources</h1>
-        <h2 style="width:100%">Click <a href="resources1.html">here</a> for a much longer list with direct filters to better fit your needs, or call 911 for immediate help</h2>
+        <h3 style="width:100%;margin:20px">Click <a href="resources1.html">here</a> for a much longer list with direct filters to better fit your needs, or call 911 for immediate help</h3>
 
         <div class="imgHolder">
             <a href="https://namisandiego.org/helpline/"><img class="linked-images" src="https://upload.wikimedia.org/wikipedia/commons/5/58/NAMI_logo.svg"></a>
@@ -126,6 +132,5 @@
         <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
         <br>Visit our instagram @plhs_aspen_challenge</p>
     </div>
-
-
-</body></html>
+</body>
+</html>
