@@ -6,24 +6,18 @@
     <title>Resources</title>
     <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
-        body{font-family:'Josefin Sans', 'Gill Sans';margin:0px;padding-bottom:0px}
-        div{margin:30px;border-radius: 20px;padding:10px}
-        p{padding:30px;color:white;margin:0px}
-        h1{font-size: xx-large;text-align: center;color:white;}
-        h2{font-size: x-large;text-align: center;color:white;}
-        h3,h4,h5,h6{text-align:center;color:white;margin:5px}
-        label{padding:20px;color:white;}
-        img{margin:20px; background-color:white;}
-        a{color:rgb(85, 168, 216);}
+        body{font-family:'Josefin Sans','Gill Sans';margin:0px;padding-bottom:0px}
+        div{margin:30px;border-radius:20px;padding:10px}
+        p{padding:30px;padding-top:5px;color:white;margin:0px;font-size:19px}
+        h1{font-size:40px;padding-top:20px}
+        h2{font-size:30px;padding-bottom:20px}
+        h3{font-size:25px;font-weight:normal}
+        h1,h2,h3,h4,h5,h6{text-align:center;color:white;margin:0px;}
+        img{margin:5px; background-color:white;}
+        a{color:rgb(106, 190, 255);}
         
-        button
-        {
-            font-family:'Josefin Sans';padding:5px;background-color:#d1fbff;
-            max-width:100px;min-width:80px;height:50px
-        }
-        
-        .linked-images{border:10px solid rgb(45, 6, 76);border-radius:5px;display:block;margin:auto;max-width:200px;max-height:200px;padding:10px;}
-        .imgHolder{max-height:400px;width:400px;flex:1;margin:20px;text-align: center}
+        .linked-images{border:10px solid rgb(45, 12, 70);border-radius:5px;display:block;margin:auto;max-width:250px;max-height:200px;padding:10px;margin-bottom:10px}
+        .imgHolder{max-height:400px;width:400px;flex:1;margin:5px;text-align:center;padding:5px}
         .linked-images:hover{transform:scale(1.05);transition:transform 0.1s ease}
         
         .topbar{font-size:20px;padding:10px}
@@ -43,6 +37,12 @@
             border-radius: 0px;
         }
         
+        button
+        {
+            font-family:'Josefin Sans';font-size:15px;padding-left:5px;padding-right:5px;background-color:#d1fbff;
+            max-width:100px;min-width:80px;height:45px;margin:5px;margin-top:20px;border-radius:10px;
+        }
+
         .hide{display:none}
         .show{display:block}
     </style>
@@ -60,7 +60,7 @@
     
     <!--top bar-->
     <div style="background-color:black;min-height:5vh;margin:0px;border-radius:0px;display:flex;flex-wrap:wrap;align-items:center;">
-        <a href="index.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:50px;display:block;"></img></a>
+        <a href="index.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:70px;padding-right:10px"></a>
         <a href="resources1.html"><p class="topbar">Resources</p></a>
         <a href="hotlines.html"><p class="topbar">Hotlines</p></a>
         <a href="AboutUs.html"><p class="topbar">About Us</p></a>
@@ -85,9 +85,10 @@
 
     <div style="background-color: rgb(51, 47, 106);">
         <h1>Resources</h1>
-        <h2>Click <a href="hotlines.html">here</a> for a list of hotlines
-        <br><br>Select a catagory to find the best mental health resources for you</h2>
-        
+        <h3>
+            <br>Click <a href="hotlines.html">here</a> for a list of hotlines<br>
+            <br>Select a catagory to find the best mental health resources for you <br>(feel free to use control+f for keywords!)
+        </h3>
         
         <button onclick="filterSelection('all')">Show All</button>
         <button onclick="filterSelection('hotline')">Helplines</button>
@@ -121,7 +122,7 @@
             </div>
             <div class="filterDiv imgHolder calming">
                 <a href="https://sites.google.com/sandi.net/sdusd-virtualcalmingroom/home"><img class="linked-images" src="https://i.ibb.co/HqfKSmB/virtual-calming-room-POTO.png"></a>
-                <p>This is just a SDUSD website featuring calming activities like yoga, live zoo cams, coloring, etc. It has lots of online and IRL things to try out that can help relieve stress and maybe even lead to a new hobby.</p>
+                <p>This is a SDUSD website with calming activities like yoga, live zoo cams, coloring, etc. It has lots of online and IRL things to try out that can help relieve stress.</p>
             </div>
             <div class="filterDiv imgHolder lgbtq hotline">
                 <a href="https://www.thetrevorproject.org/resources/"><img class="linked-images" src="https://assets.glginsights.com/wp-content/uploads/2023/03/D1_TheTrevorProject_SocialImpact_Image-1.png"></a>
@@ -133,7 +134,7 @@
             </div>
             <div class="filterDiv imgHolder hotline">
                 <a href="https://www.thehotline.org/"><img class="linked-images" src="https://www.thehotline.org/wp-content/themes/hotline-main/assets/images/logo-ndvh.svg"></a>
-                <p>The NDVH is a hotline which helps people in abusive relationships, families, etc. There is a live chat directly on their website as well as phone numbers and resources.</p>
+                <p>The NDVH is a hotline which helps people in abusive relationships, families, etc. There is a <b>live chat directly on their website</b> to talk.</p>
             </div>
             <div class="filterDiv imgHolder alcohol">
                 <a href="https://al-anon.org/"><img class="linked-images" src="https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/6uigqinhlp68hvthhs0e472kah.jpg"></a>
