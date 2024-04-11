@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <title>testpage!</title>
+    <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
+    <style>
+        body{font-family:'Josefin Sans','Gill Sans';margin:0px}
+        div{margin:30px;border-radius:20px;padding:10px;background-color:rgb(148, 87, 127)}
+        h1,h2,h3,h4,h5,h6{color:white;text-align:center;}
+        h1{width:100%;padding:10px}
+        p{font-size:20px;color:white}
+
+        .flex{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;}
+        .flexitem{margin:8px;max-width:100%;}
+
+        .topbar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
+        .background
+        {
+            background-color:rgb(33, 73, 55);
+            z-index:-1;
+            margin:0px;border-radius:0px;
+            height:100%;width:100%;
+            position:fixed;top:0;left:0;
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="topbar flex">
+        <img class="flexitem" src="images/POTOIcon.png" style="width:8%">
+        <p class="flexitem">example</p>
+        <p class="flexitem">example 2</p>
+    </div>
+
+    <div class="flex">
+        <h1 class="flexitem">This is a 1 header</h1>
+        <p class="flexitem">This is just a test page for mobile!</p>
+        <h2 class="flexitem">This is a differnt header</h2>
+        <span class="flex">
+            <img class="flexitem" style="max-width:40%" src="images/warm+hotlines.png">
+            <p class="flexitem" style="max-width:50%">this is a bunch of text next to the image yippe</p>
+        </span>
+    </div>
+</body>
+</html>
