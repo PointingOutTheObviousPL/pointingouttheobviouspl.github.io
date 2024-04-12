@@ -19,7 +19,7 @@
         .topbar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
         .background
         {
-            background-color:rgb(33, 73, 55);
+            background-image:url(images/HomeBackground.png);
             z-index:-1;
             margin:0px;border-radius:0px;
             height:100%;width:100%;
@@ -28,11 +28,19 @@
         }
     </style>
 </head>
-<body>
-    <div class="background"></div>
+<body onscroll="parallaxScroll()">
+    <script> 
+        function parallaxScroll() <!--this just makes the background cool scroll-->
+        {
+            var scrolled = window.scrollY;
+            document.querySelector('.background').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
+        }
+    </script>
+    <div class="background" style="background-position-y: -286px;"></div>
+
     <div class="topbar flex">
         <a href="index.html"><img class="flexitem" src="images/POTOIcon.png" style="width:50px"></a>
-        <p class="flexitem"><a href="resources1.html">Resources</a></p>
+        <p class="flexitem"><a href="resources.html">Resources</a></p>
         <p class="flexitem"><a href="hotlines.html">Hotlines</a></p>
         <p class="flexitem"><a href="AboutUs.html">About Us</a></p>
     </div>
@@ -45,6 +53,12 @@
             <img class="flexitem" style="max-width:40%" src="images/warm+hotlines.png">
             <p class="flexitem" style="max-width:50%">this is a bunch of text next to the image yippe</p>
         </span>
+    </div>
+    <div class="topbar">
+        <p>
+            If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
+            <br>Visit our instagram @plhs_aspen_challenge
+        </p>
     </div>
 </body>
 </html>
