@@ -3,11 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
-    <title>testpage!</title>
+    <title>POTO</title>
     <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
         body{font-family:'Josefin Sans','Gill Sans';margin:0px}
-        div{margin:30px;border-radius:20px;padding:10px;background-color:rgb(148, 87, 127)}
+        div{margin:30px;border-radius:20px;padding:10px;background-color:rgb(38, 96, 117)}
         h1,h2,h3,h4,h5,h6{color:white;text-align:center;}
         h1{width:100%;padding:10px}
         p{font-size:20px;color:white}
@@ -16,19 +16,19 @@
         .flex{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;}
         .flexitem{margin:8px;max-width:100%;}
 
-        .topbar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
+        .topbar{position:sticky;top:0;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
         .topbar::before{background-color:black;position:fixed;top:0;left:0;width:100%;height:100%}
         .bottombar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
-        .bottombar::before{background-color:black;position:fixed;top:0;left:0;width:100%;height:100%}
+        .bottombar::after{background-color:black;position:fixed;left:0;width:100%;height:100%;content:""}
 
         .background
         {
             background-image:url(images/HomeBackground.png);
-            z-index:-1;
+            background-size:cover;
             margin:0px;border-radius:0px;
             height:100%;width:100%;
             position:fixed;top:0;left:0;
-            background-size:cover;
+            z-index:-1;
         }
     </style>
 </head>
@@ -50,15 +50,18 @@
     </div>
 
     <div class="flex">
-        <h1 class="flexitem">This is a 1 header</h1>
-        <p class="flexitem">This is just a test page for mobile!</p>
-        <h2 class="flexitem">This is a differnt header</h2>
-        <span class="flex">
-            <img class="flexitem" style="max-width:40%" src="images/warm+hotlines.png">
-            <p class="flexitem" style="max-width:50%">this is a bunch of text next to the image yippe</p>
-        </span>
+        
+        <div class="flex" style="background-color: rgb(25, 35, 50);">
+            <img class="flexitem" src="images/POTOFinalLogo.png" alt="POTO logo" style="max-height: 150px;background-color:transparent;">
+            <div class="flexitem">
+                <h1>Pointing Out the Obvious</h1>
+                <h2>Mental health accessibility for teens</h2>
+            </div>
+        </div>
+
+
     </div>
-    <div class="topbar">
+    <div class="bottombar">
         <p>
             If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
             <br>Visit our instagram @plhs_aspen_challenge
