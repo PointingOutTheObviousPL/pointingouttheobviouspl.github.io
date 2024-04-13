@@ -1,106 +1,94 @@
-<html><head> <!-- the arrow things make this. "head" is stuff not displayed on webpage -->
-    <meta charset="UTF-8"> <!--just common lang thing-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"> <!--ask chatgpt lol, font applier-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
     <title>POTO</title>
     <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
-        body{font-family:'Josefin Sans','Gill Sans';margin:0px;padding-bottom:0px}
-        div{margin:30px;border-radius:20px;padding:10px}
-        p{padding:30px;padding-top:5px;color:white;margin:0px;font-size:20px}
-        h1{font-size:40px;padding-top:20px}
-        h2{font-size:30px;padding-bottom:20px}
-        h3{font-size:25px;font-weight:normal}
-        h1,h2,h3,h4,h5,h6{text-align:center;color:white;margin:0px;}
-        img{margin:5px; background-color:white;}
-        a{color:rgb(169,234,255);}
-        
-        .linked-images{border:10px solid rgb(15, 55, 76);border-radius:5px;display:block;margin:auto;max-width:250px;max-height:200px;padding:10px;margin-bottom:10px}
-        .imgHolder{max-height:400px;width:400px;flex:1;margin:0px;text-align:center;padding:5px}
-        .linked-images:hover{transform:scale(1.05);transition:transform 0.1s ease}
-        
-        .topbar{font-size:20px;padding:10px}
-        .parallax-bg
-        { 
-            background-image: url(images/HomeBackground.png);
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: -1;
-            margin:0px;
-            border-radius: 0px;
-        }
+        body{font-family:'Josefin Sans','Gill Sans';margin:0px;}
+        div{margin:3%;border-radius:20px;padding:10px;background-color:rgb(38, 96, 117)}
+        h1,h2,h3,h4,h5,h6{color:white;text-align:center;}
+        h1{width:100%;font-size:40px}
+        p{font-size:20px;color:white;padding-left:5px;padding-right:5px}
+        a{color:rgb(149, 213, 236)}
 
+        .sidemargin{margin-left:5%;margin-right:5%}
+
+        .flex{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;}
+        .flexitem{margin:5px;max-width:100%;display:block}
+
+        .linked-images{background-color:white;border:10px solid rgb(45, 12, 70);border-radius:5px;display:block;margin:auto;max-width:250px;max-height:200px;padding:10px;margin-bottom:10px}
+        .imgHolder{background-color:transparent;max-height:400px;width:400px;flex:1;margin:5px;text-align:center;padding:5px}
+        .linked-images:hover{transform:scale(1.05);transition:transform 0.1s ease}
+
+        .topbar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
+        .bottombar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
         
+        .background
+        {
+            background-image:url(images/HomeBackground.png);
+            background-size:cover;
+            background-size: cover;
+            margin:0px;border-radius:0px;
+            height:100%;width:100%;
+            position:fixed;top:0;left:0;
+            z-index:-1;
+        }
     </style>
 </head>
-
 <body onscroll="parallaxScroll()">
     <script> 
         function parallaxScroll() <!--this just makes the background cool scroll-->
         {
             var scrolled = window.scrollY;
-            document.querySelector('.parallax-bg').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
+            document.querySelector('.background').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
         }
     </script>
-    <div class="parallax-bg" style="background-position-y: -286px;"></div>
+    <div class="background" style="background-position-y: -286px;"></div>
 
-    <!--top bar-->
-    <div style="background-color:black;min-height:5vh;margin:0px;border-radius:0px;display:flex;flex-wrap:wrap;align-items:center;position:sticky">
-        <a href="index.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:70px;padding-right:10px"></a>
-        <a href="resources1.html"><p class="topbar">Resources</p></a>
-        <a href="hotlines.html"><p class="topbar">Hotlines</p></a>
-        <a href="AboutUs.html"><p class="topbar">About Us</p></a>
+    <div class="topbar flex">
+        <a href="index.html"><img class="flexitem" src="images/POTOIcon.png" style="width:70px"></a>
+        <p class="flexitem"><a href="resources.html">Resources</a></p>
+        <p class="flexitem"><a href="hotlines.html">Hotlines</a></p>
+        <p class="flexitem"><a href="AboutUs.html">About Us</a></p>
     </div>
 
-    <div style="background-color:#346475">
-        <div style="background-color: rgb(25, 34, 51);padding:5px;">
-         <div style="display:flex;align-items:center;justify-content:center;margin:0px">
-            <img src="images/POTOFinalLogo.png" alt="POTO logo" style="max-height: 150px;background-color:transparent;">
-            <div>
+    <div>
+        <div class="flex" style="background-color: rgb(25, 35, 50);">
+            <img class="flexitem" src="images/POTOFinalLogo.png" alt="POTO logo" style="max-height: 150px;background-color:transparent;">
+            <div class="flexitem" style="background-color:transparent">
                 <h1>Pointing Out the Obvious</h1>
                 <h2>Mental health accessibility for teens</h2>
             </div>
-         </div>
-            <h3 style="padding-left:100px;padding-right:100px;padding-bottom:40px">
+            <h2>
                 POTO is dedicated to expanding mental health awareness and accessibility for teens. 
                 Explore our <a href="resources1.html">library of resources</a> or connect with similar youth in our anonymous, peer-support app, POTOConnect.
-            </h3>
+            </h2>
         </div>
-        
-        <h3>What is POTO?</h3>
-        <p>
-            We are a group of high schoolers trying to make mental health accessible to all students. What's so obvious, you may ask? Two things: mental health in teenagers is a huge problem. Yet there are many resources to help that they're not using for a variety of reasons. 
-            Making a simple Google search for mental health resources brings up a bunch of stuff, but which ones actually work? 
-            We made a compiled list of organizations with brief descriptions so you can easily find help best suited for you. 
-            Made by teens, for teens.
+        <h2><br>Who We Are</h2>
+        <p class="sidemargin">
+            Pointing Out the Obvious (POTO), is a group of 9 Point Loma High School students formed together under the <a href="https://aspenchallenge.org/">Aspen Challenge</a> program. 
+            This national non-profit challenges students to create & implement the best solution to one of five community issues. 
+            This year, 2024, PLHS is developing a roadmap of mental health resources for all teens to use.
         </p>
-        <h3>About us</h3>
-        <p>
-            Mental health is an obvious problem in teens, yet few of them know where to get help or just don't feel comfortable asking for help. 
-            This is why we created POTO: to make quality mental health services more accessible! 
-            We also created an app called POTOConnect that allows teens to talk to each other about sensitive topics anonymously without feeling nervous or embarrassed, as is so common with teens seeking mental help. 
-            Our team came about from the Aspen Challenge program, which challenges high school students to create and implement a solution to one of 5 topics. 
-            This year, 2024, PLHS chose to try and make mental health resources widely accessible to all students at no cost. 
-            Our hope is that POTO and POTOConnect become reliable mental health hubs for teens to connect.
+        <h2><br>Our Mission</h2>
+        <p class="sidemargin">
+            Making a simple Google search for mental health resources reveals that the issue for many students is not quantity or quality of resources, but a lack of accessibility to these tools (or awareness in knowing how to use them). 
+            We wish to bring awareness to the lack of engagement with necessary mental health resources for youth. 
         </p>
-        <h3>About our App (currently in beta)</h3>
-        <p>
-            Our App, POTOConnect, has chat rooms where teens seeking help can chat anonymously with therapists in training and other teens facing similar problems. 
-            Getting access to licensed therapists can be difficult, costly, and some people feel burdensome when asking for help. 
-            Our app solves all of these issues because it's super easy to access, it's free, and by participating you are actively training student therapists so they can later work professionally. 
-            We are hoping for this app to become accessible on school computers in SDUSD, but for now we are beta-testing on IOS and Android.
-        </p>
-        <p style="text-align:center;color:rgb(207, 91, 91)">Please note that this project is a work in progress :)</p>
+
+        <!--CANVA IMBED-->
+        <div style="margin-left:10%;margin-right:10%;padding-top: 56.2500%;overflow: hidden;will-change: transform;">
+            <iframe loading="lazy" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGCVRgw_o4&#x2F;kNGz-QT1BsaNMF9sSd2WpQ&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+        </div>
     </div>
 
-    <div style="background-color: #4c773c;display:flex;flex-wrap:wrap;">
-        <h1 style="width:100%">Resources</h1>
-        <h3 style="width:100%;margin:20px">Click <a href="resources1.html">here</a> for a much longer list with direct filters to better fit your needs, or call 911 for immediate help</h3>
+    <div style="background-color: #4c773c;" class="flex">
+        <h1>Resources</h1>
+        <h2>Click <a href="resources1.html">here</a> for a much longer list with direct filters to better fit your needs, or call 911 for immediate help</h2>
 
         <div class="imgHolder">
             <a href="https://namisandiego.org/helpline/"><img class="linked-images" src="https://upload.wikimedia.org/wikipedia/commons/5/58/NAMI_logo.svg"></a>
@@ -126,11 +114,31 @@
             <a href="https://www.psychologytoday.com/us/therapists"><img class="linked-images" src="https://turnaroundusa.org/wp-content/uploads/2020/06/psychology-today-vector-logo.png"></a>
             <p>This is an extremely easy way to find therapists close to you all across the USA. It lists TONS of therapists with detailed accounts of all of them including specialties, location, reviews, and prices.</p>
         </div>
-       
     </div>
-    <div style="background-color:black;min-height:15vh;margin:0px;border-radius:0px">
-        <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
-        <br>Visit our instagram @plhs_aspen_challenge</p>
+    
+    <div class="bottombar">
+        <p>
+            If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
+            <br>Visit our instagram @plhs_aspen_challenge
+        </p>
     </div>
+
+    <script> //this is from chatgpt idk how it works but its for top and bottom scrolling
+        var lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                // Scroll down
+                document.querySelector(".topbar").style.backgroundColor = "black";
+                document.querySelector(".bottombar").style.backgroundColor = "black";
+            } else {
+                // Scroll up
+                document.querySelector(".topbar").style.backgroundColor = "black";
+                document.querySelector(".bottombar").style.backgroundColor = "black";
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+        });
+    </script>
+    
 </body>
 </html>
