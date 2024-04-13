@@ -6,16 +6,20 @@
     <title>Hotlines</title>
     <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
-        body{font-family:'Josefin Sans','Gill Sans';margin:0px;padding-bottom:0px}
-        div{margin:30px;border-radius:20px;padding:10px}
-        p{padding:30px;padding-top:5px;color:white;margin:0px;font-size:20px}
-        h1{font-size:40px;padding-top:20px}
-        h2{font-size:30px;padding-bottom:20px}
-        h3{font-size:25px;font-weight:normal}
-        h1,h2,h3,h4,h5,h6{text-align:center;color:white;margin:0px;}
-        img{margin:5px; background-color:white;}
-        a{color:rgb(85, 168, 216);}
+        body{font-family:'Josefin Sans','Gill Sans';margin:0px;}
+        div{margin:3%;border-radius:20px;padding:10px;background-color:rgb(38, 96, 117)}
+        h1,h2,h3,h4,h5,h6{color:white;text-align:center;}
+        h1{width:100%;font-size:40px}
+        p{font-size:20px;color:white;padding-left:5px;padding-right:5px}
+        a{color:rgb(149, 213, 236)}
         
+        .flex{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;}
+        .flexitem{margin:5px;max-width:100%;display:block}
+
+        .linked-images{background-color:white;border:10px solid rgb(45, 12, 70);border-radius:5px;display:block;margin:auto;max-width:250px;max-height:200px;padding:10px;margin-bottom:10px}
+        .imgHolder{background-color:transparent;max-height:400px;width:400px;flex:1;margin:5px;text-align:center;padding:5px}
+        .linked-images:hover{transform:scale(1.05);transition:transform 0.1s ease}
+
         button
         {
             font-family:'Josefin Sans';padding:5px;background-color:#d1fbff;
@@ -24,21 +28,18 @@
         
         .linked-images{border:10px solid rgb(82, 23, 23);border-radius:5px;display:block;margin:auto;max-width:250px;margin:10px;}
        
-        .topbar{font-size:20px;padding:10px}
-        .parallax-bg
-        { 
-            background-image: url(images/HomeBackground.png);
+        .topbar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
+        .bottombar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
+        
+        .background
+        {
+            background-image:url(images/HomeBackground.png);
+            background-size:cover;
             background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: -1;
-            margin:0px;
-            border-radius: 0px;
+            margin:0px;border-radius:0px;
+            height:100%;width:100%;
+            position:fixed;top:0;left:0;
+            z-index:-1;
         }
         
     </style>
@@ -49,23 +50,23 @@
         function parallaxScroll() <!--this just makes the background cool scroll-->
         {
             var scrolled = window.scrollY;
-            document.querySelector('.parallax-bg').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
+            document.querySelector('.background').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
         }
     </script>
-    <div class="parallax-bg"></div>
+    <div class="background"></div>
     
     <!--top bar-->
-    <div style="background-color:black;min-height:5vh;margin:0px;border-radius:0px;display:flex;flex-wrap:wrap;align-items:center;">
-        <a href="index.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:70px;padding-right:10px"></a>
-        <a href="resources1.html"><p class="topbar">Resources</p></a>
-        <a href="hotlines.html"><p class="topbar">Hotlines</p></a>
-        <a href="AboutUs.html"><p class="topbar">About Us</p></a>
+    <div class="topbar flex">
+        <a href="index.html"><img class="flexitem" src="images/POTOIcon.png" style="width:70px"></a>
+        <p class="flexitem"><a href="resources.html">Resources</a></p>
+        <p class="flexitem"><a href="hotlines.html">Hotlines</a></p>
+        <p class="flexitem"><a href="AboutUs.html">About Us</a></p>
     </div>
    
 
     <div style="background-color: rgb(107, 22, 34);">
         <h1>Hotlines</h1>
-        <h3 style="font-size:20px">
+        <h3 style="font-size:20px;font-weight:normal">
                 Hotlines are phone numbers you can call in case of an emergency, kind of like 911.
                 They are private and won't track any personal data unless it's required. 
                 Please call these if you or someone you know are in danger and need immediate help.
@@ -73,9 +74,9 @@
                 Use helplines (or warmlines) if nobody is in immediate danger.
             </h3>
         
-        <div style="display:flex;justify-content:center;">  
-            <div>
-            <p style="text-align:center;font-size:20px;padding:0px">
+        <div style="background-color:transparent;align-items:flex-start" class="flex">  
+            <span class="flexitem" style="max-width:500px">
+            <p style="text-align:center;margin-right:5%">
                 San Diego Access & Crisis Line: 888-724-7240<br><br>
                 California Youth Crisis Line: 800-843-5200<br><br>
                 National Suicide Prevention Hotline: 800-273-8255<br><br>
@@ -98,10 +99,9 @@
                 California 24/7 Peer-Run warmline: 855-845-7415<br><br>
                 CalHOPE WarmLine: (833) 317-HOPE (4673)<br><br>
                 NAMI helpline: Text FRIEND to 62640; 800-950-NAMI (6264)
-
             </p>
-            </div>
-        <img src="images/warm+hotlines.png" style="max-width:40%;height:min-content" class="linked-images"></img>
+            </span>
+        <img src="images/warm+hotlines.png" class="flexitem" style="max-width:40%;min-width:200px">
         </div> 
    
     </div>
@@ -109,4 +109,21 @@
         <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
         <br>Visit our instagram @plhs_aspen_challenge</p>
     </div>
+    
+    <script>
+        var lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                // Scroll down
+                document.querySelector(".topbar").style.backgroundColor = "black";
+                document.querySelector(".bottombar").style.backgroundColor = "black";
+            } else {
+                // Scroll up
+                document.querySelector(".topbar").style.backgroundColor = "black";
+                document.querySelector(".bottombar").style.backgroundColor = "black";
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+        });
+    </script>
 </body>
