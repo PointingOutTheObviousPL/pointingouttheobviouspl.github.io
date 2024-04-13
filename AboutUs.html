@@ -6,33 +6,34 @@
     <title>About Us</title>
     <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
     <style>
-        body{font-family:'Josefin Sans','Gill Sans';margin:0px;padding-bottom:0px}
-        div{margin:30px;border-radius:20px;padding:10px}
-        p{padding:30px;padding-top:5px;color:white;margin:0px;font-size:20px}
-        h1{font-size:40px;padding-top:20px}
-        h2{font-size:30px;padding-bottom:20px}
-        h3{font-size:25px;font-weight:normal}
-        h1,h2,h3,h4,h5,h6{text-align:center;color:white;margin:0px;}
-        img{margin:5px; background-color:white;}
-        a{color:rgb(85, 168, 216);}
+        body{font-family:'Josefin Sans','Gill Sans';margin:0px;}
+        div{margin:3%;border-radius:20px;padding:10px;background-color:rgb(38, 96, 117)}
+        h1,h2,h3,h4,h5,h6{color:white;text-align:center;}
+        h1{width:100%;font-size:40px}
+        p{font-size:20px;color:white;padding-left:5px;padding-right:5px}
+        a{color:rgb(149, 213, 236)}
 
-        .topbar{font-size:20px;padding:10px}
-        .parallax-bg
-        { 
-            background-image: url(images/HomeBackground.png);
+        .flex{background-color:transparent;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;}
+        .flexitem{margin:5px;max-width:100%;display:block}
+
+        .linked-images{background-color:white;border:10px solid rgb(45, 12, 70);border-radius:5px;display:block;margin:auto;max-width:250px;max-height:200px;padding:10px;margin-bottom:10px}
+        .imgHolder{background-color:transparent;max-height:400px;width:400px;flex:1;margin:5px;text-align:center;padding:5px}
+        .linked-images:hover{transform:scale(1.05);transition:transform 0.1s ease}
+
+        .topbar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
+        .bottombar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
+        
+        .background
+        {
+            background-image:url(images/HomeBackground.png);
+            background-size:cover;
             background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: -1;
-            margin:0px;
-            border-radius: 0px;
+            margin:0px;border-radius:0px;
+            height:100%;width:100%;
+            position:fixed;top:0;left:0;
+            z-index:-1;
         }
-        .aboutMeHolder{margin:10px;flex:1}
+        .aboutMeHolder{background-color:transparent;margin:5px;flex:1}
         .aboutMe{max-width:250px;max-height:250px;border:10px solid rgb(25, 58, 58);border-radius:10px;}
     </style>
 </head>
@@ -41,35 +42,37 @@
         function parallaxScroll() <!--this just makes the background cool scroll-->
         {
             var scrolled = window.scrollY;
-            document.querySelector('.parallax-bg').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
+            document.querySelector('.background').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
         }
     </script>
-    <div class="parallax-bg"></div>
+    <div class="background"></div>
     
     <!--top bar-->
-    <div style="background-color:black;min-height:5vh;margin:0px;border-radius:0px;display:flex;flex-wrap:wrap;align-items:center;">
-        <a href="index.html"><img src="images/POTOIcon.png" style="background-color:transparent;width:70px;padding-right:10px"></a>
-        <a href="resources1.html"><p class="topbar">Resources</p></a>
-        <a href="hotlines.html"><p class="topbar">Hotlines</p></a>
-        <a href="AboutUs.html"><p class="topbar">About Us</p></a>
+    <div class="topbar flex">
+        <a href="index.html"><img class="flexitem" src="images/POTOIcon.png" style="width:70px"></a>
+        <p class="flexitem"><a href="resources.html">Resources</a></p>
+        <p class="flexitem"><a href="hotlines.html">Hotlines</a></p>
+        <p class="flexitem"><a href="AboutUs.html">About Us</a></p>
     </div>
 
     <div style="background-color: rgb(35, 75, 90);text-align:center;margin:40px">
         <h1>About us</h1>
-        <h2>Meet the team who helped put everything together!</h2>
-
-        <div style="display:flex;flex-wrap:wrap;margin-top:0px;margin-bottom:0px">
+        <p>
+            POTO is a team who competed in the Aspen Challenge 2024. We all contributed to our project where we organized a resources roadmap and presented it to our school, a well as a lot of other activities around our neighborhood such as gardening and creative get-togethers.
+        </p>
+        <h2><br>Meet the team who helped put everything together!</h2>
+        <div class="flex">
         <div class="aboutMeHolder">
             <img src="images/Morgan_About_Me.png" class="aboutMe">
             <p>Morgan: Project manager</p>
         </div>
         <div class="aboutMeHolder">
             <img src="images/Audrey_About_Me.png" class="aboutMe">
-            <p>Audrey: Social media + designing</p>
+            <p>Audrey: Social media and designing</p>
         </div>
         <div class="aboutMeHolder">
             <img src="images/Anna_About_Me.png" class="aboutMe">
-            <p>Anna: Illustrater + documentarian</p>
+            <p>Anna: Illustrater, writer and designer</p>
         </div>
         <div class="aboutMeHolder">
             <img src="images/Talor_About_Me.png" class="aboutMe">
@@ -77,7 +80,7 @@
         </div>
         <div class="aboutMeHolder">
             <img src="images/Danya_About_Me.png" class="aboutMe">
-            <p>Danya: Presentation and website designing</p>
+            <p>Danya: Lead designer</p>
         </div>
         <div class="aboutMeHolder">
             <img src="images/Kat_About_Me.png" class="aboutMe">
@@ -85,15 +88,15 @@
         </div>
         <div class="aboutMeHolder">
             <img src="images/Conner_About_Me.png" class="aboutMe">
-            <p>Conner: Outreach coordinator</p>
+            <p>Conner: Outreach coordinator and engineer</p>
         </div>
         <div class="aboutMeHolder">
             <img src="images/Jenny_About_Me.png" class="aboutMe">
-            <p>Jenny: Supplies coordinator</p>
+            <p>Jenny: Supplies coordinator and photographer</p>
         </div>
         <div class="aboutMeHolder">
             <img src="images/Sam_About_Me.png" class="aboutMe">
-            <p>Sam: Researcher</p>
+            <p>Sam: Researcher and helper</p>
         </div>
         </div>
     </div>
@@ -101,5 +104,22 @@
         <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
         <br>Visit our instagram @plhs_aspen_challenge</p>
     </div>
+    
+    <script>
+        var lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                // Scroll down
+                document.querySelector(".topbar").style.backgroundColor = "black";
+                document.querySelector(".bottombar").style.backgroundColor = "black";
+            } else {
+                // Scroll up
+                document.querySelector(".topbar").style.backgroundColor = "black";
+                document.querySelector(".bottombar").style.backgroundColor = "black";
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+        });
+    </script>
 </body>
 </html>
