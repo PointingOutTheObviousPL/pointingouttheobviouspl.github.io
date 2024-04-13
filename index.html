@@ -79,8 +79,10 @@
         </p>
 
         <!--CANVA IMBED-->
-        <div style="margin-left:10%;margin-right:10%;padding-top: 56.2500%;overflow: hidden;will-change: transform;">
-            <iframe loading="lazy" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        <div style="margin-left:15%;margin-right:15%;position: relative; width: 70%; height: 0; padding-top: 56.2500%;
+            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+            border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
             src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGCVRgw_o4&#x2F;kNGz-QT1BsaNMF9sSd2WpQ&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
             </iframe>
         </div>
@@ -122,23 +124,5 @@
             <br>Visit our instagram @plhs_aspen_challenge
         </p>
     </div>
-
-    <script> //this is from chatgpt idk how it works but its for top and bottom scrolling
-        var lastScrollTop = 0;
-        window.addEventListener("scroll", function() {
-            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            if (currentScroll > lastScrollTop) {
-                // Scroll down
-                document.querySelector(".topbar").style.backgroundColor = "black";
-                document.querySelector(".bottombar").style.backgroundColor = "black";
-            } else {
-                // Scroll up
-                document.querySelector(".topbar").style.backgroundColor = "black";
-                document.querySelector(".bottombar").style.backgroundColor = "black";
-            }
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-        });
-    </script>
-    
 </body>
 </html>
