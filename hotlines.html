@@ -26,8 +26,6 @@
             font-family:'Josefin Sans';padding:5px;background-color:#d1fbff;
             max-width:100px;min-width:80px;height:50px
         }
-        
-        .linked-images{border:10px solid rgb(82, 23, 23);border-radius:5px;display:block;margin:auto;max-width:250px;margin:10px;}
        
         .topbar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
         .bottombar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
@@ -61,6 +59,7 @@
         <a href="index.html"><img class="flexitem" src="images/POTOIcon.png" style="width:70px"></a>
         <p class="flexitem"><a href="resources.html">Resources</a></p>
         <p class="flexitem"><a href="hotlines.html">Hotlines</a></p>
+        <p class="flexitem"><a href="healthy-habits.html">Healthy Habits</a></p>
         <p class="flexitem"><a href="AboutUs.html">About Us</a></p>
     </div>
    
@@ -102,29 +101,12 @@
                 NAMI helpline: Text FRIEND to 62640; 800-950-NAMI (6264)
             </p>
             </span>
-        <img src="images/warm+hotlines.png" class="flexitem" style="max-width:40%;min-width:200px">
+        <img src="images/warm+hotlines.png" class="flexitem" style="max-width:40%;min-width:200px;border:10px solid rgb(82, 23, 23);border-radius:5px;">
         </div> 
    
     </div>
-    <div style="background-color:black;min-height:15vh;margin:0px;border-radius:0px">
+    <div class="bottombar">
         <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
         <br>Visit our instagram @plhs_aspen_challenge</p>
     </div>
-    
-    <script>
-        var lastScrollTop = 0;
-        window.addEventListener("scroll", function() {
-            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            if (currentScroll > lastScrollTop) {
-                // Scroll down
-                document.querySelector(".topbar").style.backgroundColor = "black";
-                document.querySelector(".bottombar").style.backgroundColor = "black";
-            } else {
-                // Scroll up
-                document.querySelector(".topbar").style.backgroundColor = "black";
-                document.querySelector(".bottombar").style.backgroundColor = "black";
-            }
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-        });
-    </script>
 </body>
