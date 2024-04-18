@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"> <!--ask chatgpt lol, font applier-->
+    <title>Healthy Habits</title>
+    <link rel="icon" href="images/POTOIcon.png" type="image/x-icon">
+    <style>
+        body{font-family:'Josefin Sans','Gill Sans';margin:0px;}
+        div{margin:3%;border-radius:20px;padding:10px;background-color:rgb(73, 127, 161)}
+        h1,h2,h3,h4,h5,h6{color:white;text-align:center;}
+        h1{width:100%;font-size:40px}
+        p{font-size:20px;color:white;padding-left:5px;padding-right:5px}
+        a{color:rgb(149, 213, 236)}
+        
+        .flex{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;}
+        .flexitem{margin:5px;max-width:100%;display:block}
+
+        .grid{display:grid;column-gap:5%;row-gap:2%;grid-template-columns:50% 50%;padding:5%}
+        .griditem{max-width:100%;justify-content:center;text-align:center;font-size:clamp(2vw, 3vw, 30px)}
+
+        button
+        {
+            font-family:'Josefin Sans';padding:5px;background-color:#d1fbff;
+            max-width:100px;min-width:80px;height:50px
+        }
+        
+        .topbar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
+        .bottombar{position:sticky;background-color:black;margin:0px;border-radius:0px;justify-content:left;}
+        
+        .background
+        {
+            background-image:url(images/HomeBackground.png);
+            background-size:cover;
+            background-size: cover;
+            margin:0px;border-radius:0px;
+            height:100%;width:100%;
+            position:fixed;top:0;left:0;
+            z-index:-1;
+        }
+        
+    </style>
+</head>
+
+<body onscroll="parallaxScroll()">
+    <script> 
+        function parallaxScroll() <!--this just makes the background cool scroll-->
+        {
+            var scrolled = window.scrollY;
+            document.querySelector('.background').style.backgroundPositionY = -(scrolled * 0.2) + 'px';
+        }
+    </script>
+    <div class="background"></div>
+    
+    <!--top bar-->
+    <div class="topbar flex">
+        <a href="index.html"><img class="flexitem" src="images/POTOIcon.png" style="width:70px"></a>
+        <p class="flexitem"><a href="resources.html">Resources</a></p>
+        <p class="flexitem"><a href="hotlines.html">Hotlines</a></p>
+        <p class="flexitem"><a href="healthy-habits.html">Healthy Habits</a></p>
+        <p class="flexitem"><a href="AboutUs.html">About Us</a></p>
+    </div>
+
+    <div style="padding-bottom:25%">
+        <h1>Healthy Habits</h1>
+        <span class="grid">
+            <img class="griditem" src="images/instaBreathe.png">
+            <p class="griditem">Relax.<br><br>When in doubt, just take a breath. Take some time away from everything stressing you out. Get off social media, put some music on, and just let it be quiet for a minute before resuming whatever you were doing. I personally like the <a href="https://thequietplaceproject.xyz/thequietplace">quiet place</a> website.</p>
+            <p class="griditem">Spend some time outside!<br><br>Seriously.<br>Count to 3 and get out of bed. If you can't go out, then at least look around or out the window for a minute or two. It helps!</p>
+            <img class="griditem" src="images/instaOutside.png">
+            <img class="griditem" src="images/instaWater.png">
+            <p class="griditem">DRINK WATER.<br><br>When was the last time you had water? If not recently, go get some! I'm a student and can say that drinking more water actually helped in being motivated and energized.</p>
+            <p class="griditem">Talk to your friends!<br><br>Talk to someone. If you've been keeping everything inside, let it out. And if you don't have anyone you're comfortable with talking to, journal!</p>
+            <img class="griditem" src="images/instaText.png">
+            <img class="griditem" src="images/instaJournals.png">
+            <p class="griditem">Journaling<br><br>Journaling is a great way to express your emotions and to sort out your mind. It's very helpful to vent/rant. Write about whatever you want. What did you do today? How do you feel? You can also audio record (talking/whispering) if you don't want to write.</p>
+            <p class="griditem">Sleep!<br><br>Studies show that sleeping from about 11:00PM to 7:30AM is a biologically good teen sleep schedule. If you normally stay up past midnight, try gradually adjusting to sleep earlier to improve your mood and energy levels during the day.</p>
+            <img class="griditem" src="images/instaSleep.png">
+        </span>
+    </div>
+
+    <div class="bottombar">
+        <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
+        <br>Visit our instagram @plhs_aspen_challenge</p>
+    </div>
+</body>
+</html>
