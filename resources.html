@@ -61,6 +61,7 @@
         <a href="index.html"><img class="flexitem" src="images/POTOIcon.png" style="width:70px"></a>
         <p class="flexitem"><a href="resources.html">Resources</a></p>
         <p class="flexitem"><a href="hotlines.html">Hotlines</a></p>
+        <p class="flexitem"><a href="healthy-habits.html">Healthy Habits</a></p>
         <p class="flexitem"><a href="AboutUs.html">About Us</a></p>
     </div>
 
@@ -83,8 +84,13 @@
 
     <div style="background-color: rgb(51, 47, 106);">
         <h1 style="margin-bottom:0px;">Resources</h1>
-        <h2 style="margin-top:0px;">
-            <br>Click <a href="hotlines.html">here</a> for a list of hotlines<br>
+        <p>
+            Remember, it's okay to ask for help! 
+            Around half of US adolescents have a mental disorder, so don't feel ashamed or embarrassed to admit it to yourself (<a href="https://www.nimh.nih.gov/health/statistics/mental-illness#:~:text=An%20estimated%2049.5%25%20of%20adolescents%20had%20any%20mental%20disorder.">source</a>).
+            If you are in immediate danger, please call 988 or any of these <a href="hotlines.html">hotlines</a>.
+            This resource page doesn't have nearly all of the resources availible, but we try to update it often.
+        </p>
+        <h2 style="margin:0px;">
             <br>Select a catagory to find the best mental health resources for you <br>(feel free to use control+f for keywords!)
         </h2>
         
@@ -95,6 +101,7 @@
         <button onclick="filterSelection('therapy')">Therapy</button>
         <button onclick="filterSelection('alcohol')">Alcohol</button>
         <button onclick="filterSelection('drugs')">Drug Abuse</button>
+        <button onclick="filterSelection('app')">Apps</button>
 
         <div class="flex">
             <div class="filterDiv imgHolder hotline">
@@ -158,6 +165,11 @@
                 <a href="https://mcalisterinc.org/"><img class="linked-images" src="https://mcalisterinc.org/wp-content/uploads/2016/11/McAlister_Logo_red.png"></a>
                 <p>Provides substance abuse treatment and recovery programs for a low price for youth and adults throughout San Diego County. Services include: telehealth, education, intervention and outreach, outpatient treatment, residential care (short and long term), and aftercare.</p>
             </div>
+            <div class="filterDiv imgHolder app calming">
+                <a href="https://solunaapp.com/"><img class="linked-images" src="https://solunaapp.com/hubfs/Soluna-Featured.png"></a>
+                <p> Soluna is a great mobile app for stress, depression etc. and has activities and stories to help release emotions.</p>
+            </div>
+
 
             <!--
             <div class="filterDiv imgHolder tags">
@@ -167,25 +179,8 @@
             -->
         </div>
     </div>
-    <div style="background-color:black;min-height:15vh;margin:0px;border-radius:0px">
+    <div class="bottombar">
         <p><br>If you have any questions, comments, or suggestions, contact us through this <a href="https://forms.gle/NyrNBdZy1B5GqW1r6">form</a>
         <br>Visit our instagram @plhs_aspen_challenge</p>
     </div>
-
-    <script>
-        var lastScrollTop = 0;
-        window.addEventListener("scroll", function() {
-            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            if (currentScroll > lastScrollTop) {
-                // Scroll down
-                document.querySelector(".topbar").style.backgroundColor = "black";
-                document.querySelector(".bottombar").style.backgroundColor = "black";
-            } else {
-                // Scroll up
-                document.querySelector(".topbar").style.backgroundColor = "black";
-                document.querySelector(".bottombar").style.backgroundColor = "black";
-            }
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-        });
-    </script>
 </body>
