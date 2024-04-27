@@ -38,7 +38,7 @@
         button
         {
             font-family:'Josefin Sans';font-size:15px;padding-left:5px;padding-right:5px;background-color:#d1fbff;
-            max-width:100px;min-width:80px;height:45px;margin:5px;margin-top:20px;border-radius:10px;
+            max-width:150px;min-width:80px;height:45px;margin:5px;margin-top:20px;border-radius:10px;
         }
 
         .hide{display:none}
@@ -84,7 +84,7 @@
 
     <div style="background-color: rgb(51, 47, 106);">
         <h1 style="margin-bottom:0px;">Resources</h1>
-        <p>
+        <p style="text-align:center;">
             Remember, it's okay to ask for help! 
             Around half of US adolescents have a mental disorder, so don't feel ashamed or embarrassed to admit it to yourself (<a href="https://www.nimh.nih.gov/health/statistics/mental-illness#:~:text=An%20estimated%2049.5%25%20of%20adolescents%20had%20any%20mental%20disorder.">source</a>).
             If you are in immediate danger, please call 988 or any of these <a href="hotlines.html">hotlines</a>.
@@ -95,6 +95,7 @@
         </h2>
         
         <button onclick="filterSelection('all')">Show All</button>
+        <button onclick="filterSelection('peer')">Peer recommended</button>
         <button onclick="filterSelection('hotline')">Helplines</button>
         <button onclick="filterSelection('lgbtq')">LGBTQ+</button>
         <button onclick="filterSelection('calming')">Calming</button>
@@ -113,13 +114,21 @@
                 <a href="https://mhanational.org/"><img class="linked-images" src="https://mhanational.org/themes/gavias_colin/images/mha-logo.png"></a>
                 <p>The MHA organization is a giant hub of resources for mental health, including but not limited to, their immediate response resources, connections page (chat rooms, phone lines, etc.), and depression information page.</p>
             </div>
-            <div class="filterDiv imgHolder therapy">
+            <div class="filterDiv imgHolder therapy peer">
                 <a href="https://www.psychologytoday.com/us/therapists"><img class="linked-images" src="https://turnaroundusa.org/wp-content/uploads/2020/06/psychology-today-vector-logo.png"></a>
                 <p>This is an extremely easy way to find therapists close to you all across the USA. It lists TONS of therapists with detailed accounts of all of them including specialties, location, reviews, and prices.</p>
             </div>
             <div class="filterDiv imgHolder therapy">
                 <a href="https://cimhs.com/"><img class="linked-images" src="https://cimhs.com/pluginfile.php/1/theme_klass/footerlogo/1539553119/logo.png"></a>
                 <p>CIMHD is a free 8 session interactive therapy program for depression, where you learn how to monitor, manage, and improve your mental health.</p>
+            </div>
+            <div class="filterDiv imgHolder app calming hotline peer">
+                <a href="https://solunaapp.com/"><img class="linked-images" src="https://solunaapp.com/hubfs/Soluna-Featured.png"></a>
+                <p>Soluna is a great mobile app for mental health and has forums (for venting and advice) AND 1 on 1 coaching sessions with pros. Highly recommend it!</p>
+            </div>
+            <div class="filterDiv imgHolder lgbtq peer">
+                <a href="https://www.qchatspace.org/"><img class="linked-images" src="https://www.lgbtqcenters.org/Assets/Images/PageContent/Full/qchatspace-logo01-transparent.png"></a>
+                <p>Q-Chat is a collection of scheduled chat rooms for LGBTQ+ youth, for free, with great mods and people to chat with anonymously!</p>
             </div>
             <div class="filterDiv imgHolder hotline">
                 <a href="https://www.samhsa.gov/"><img class="linked-images" src="https://dcp.psc.gov/OSG/physician/images/samhsa.png"></a>
@@ -128,6 +137,10 @@
             <div class="filterDiv imgHolder calming">
                 <a href="https://sites.google.com/sandi.net/sdusd-virtualcalmingroom/home"><img class="linked-images" src="https://i.ibb.co/HqfKSmB/virtual-calming-room-POTO.png"></a>
                 <p>This is a SDUSD website with calming activities like yoga, live zoo cams, coloring, etc. It has lots of online and IRL things to try out that can help relieve stress.</p>
+            </div>
+            <div class="filterDiv imgHolder lgbtq peer">
+                <a href="https://youthadvocacy.us/lgbtqia-education"><img class="linked-images" src="https://youthadvocacy.us/x/cdn/?https://storage.googleapis.com/wzukusers/user-34469638/images/5bad46348abadISMbBEB/Copy-of-Learn-to-identify-bullying-and-up-4_d600.png"></a>
+                <p> SDUSD's collection of LGBTQ+ resources, including school-official gender/name change forms.</p>
             </div>
             <div class="filterDiv imgHolder lgbtq hotline">
                 <a href="https://www.thetrevorproject.org/resources/"><img class="linked-images" src="https://assets.glginsights.com/wp-content/uploads/2023/03/D1_TheTrevorProject_SocialImpact_Image-1.png"></a>
@@ -165,9 +178,10 @@
                 <a href="https://mcalisterinc.org/"><img class="linked-images" src="https://mcalisterinc.org/wp-content/uploads/2016/11/McAlister_Logo_red.png"></a>
                 <p>Provides substance abuse treatment and recovery programs for a low price for youth and adults throughout San Diego County. Services include: telehealth, education, intervention and outreach, outpatient treatment, residential care (short and long term), and aftercare.</p>
             </div>
-            <div class="filterDiv imgHolder app calming">
-                <a href="https://solunaapp.com/"><img class="linked-images" src="https://solunaapp.com/hubfs/Soluna-Featured.png"></a>
-                <p> Soluna is a great mobile app for stress, depression etc. and has activities and stories to help release emotions.</p>
+
+            <div class="filterDiv imgHolder tags">
+                <a href="https://up2sd.org/resources?list=children-teen"><img class="linked-images" src="https://up2sd.org/images/logo.svg"></a>
+                <p>It's Up To Us is a website with multiple other resources specific to San Diego and it is geared towards everyone in the area.</p>
             </div>
 
 
